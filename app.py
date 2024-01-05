@@ -1,5 +1,4 @@
-from flask import Flask, request, render_template, jsonify
-import os
+from flask import Flask, request, render_template
 from joblib import load
 from sklearn.feature_extraction.text import TfidfVectorizer
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
@@ -32,11 +31,5 @@ def visualisasi():
 def anggota():
     return render_template('blok-7.html')
 
-
-# if __name__ == '__main__':
-#     app.run(port=3000, debug=True)
 if __name__ == '__main__':
-    app.run(debug=False, port=os.getenv("PORT", default=5000))
-
-# if __name__ == '__main__':
-#     app.run(host="0.0.0.0", port=5000, debug=true)
+    app.run(port=3000, debug=True)
