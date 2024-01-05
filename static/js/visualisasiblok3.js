@@ -15,22 +15,6 @@ optionsList1.forEach(o => {
   });
 });
 
-// const selected2 = document.querySelector(".selected-2");
-// const optionsContainer2 = document.querySelector(".dropdown-options-container-2");
-
-// const optionsList2 = document.querySelectorAll(".option-2");
-
-// selected2.addEventListener("click", () => {
-//   optionsContainer2.classList.toggle("active");
-// });
-
-// optionsList2.forEach(o => {
-//   o.addEventListener("click", () => {
-//     selected2.innerHTML = o.querySelector("label").innerHTML;
-//     optionsContainer2.classList.remove("active");
-//     changeChart();
-//   });
-// });
 
 let myChart = new Chart(
   document.getElementById('myChart'),
