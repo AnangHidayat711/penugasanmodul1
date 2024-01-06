@@ -393,13 +393,13 @@ const config302x303 = {
                     family : 'Helvetica'
                 }
             },
-            labels: {
-                render: 'value', // Menampilkan nilai label
-                fontColor: 'black', // Warna teks label
-                fontSize: 12,
-                position: 'end', // Posisi label (end, start, top, bottom)
-                textMargin: 8, // Jarak antara label dan batang
-            },
+            // labels: {
+            //     render: 'value', // Menampilkan nilai label
+            //     fontColor: 'black', // Warna teks label
+            //     fontSize: 0.02,
+            //     position: 'end', // Posisi label (end, start, top, bottom)
+            //     textMargin: 8, // Jarak antara label dan batang
+            // },
         }
     }
 };
@@ -463,13 +463,13 @@ const config304x303 = {
                     family : 'Helvetica'
                 }
             },
-            labels: {
-                render: 'value', // Menampilkan nilai label
-                fontColor: 'black', // Warna teks label
-                fontSize: 12,
-                position: 'end', // Posisi label (end, start, top, bottom)
-                textMargin: 8, // Jarak antara label dan batang
-            },
+            // labels: {
+            //     render: 'value', // Menampilkan nilai label
+            //     fontColor: 'black', // Warna teks label
+            //     fontSize: 12,
+            //     position: 'end', // Posisi label (end, start, top, bottom)
+            //     textMargin: 8, // Jarak antara label dan batang
+            // },
         }
     }
 };

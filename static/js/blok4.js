@@ -132,7 +132,7 @@ const config308x401b = {
                 fontColor: 'black', // Warna teks label
                 fontSize: 12,
                 position: 'end', // Posisi label (end, start, top, bottom)
-                textMargin: 8, // Jarak antara label dan batang
+                textMargin: 5, // Jarak antara label dan batang
             },
         }
     }
@@ -200,7 +200,7 @@ const config308x403b = {
             labels: {
                 render: 'value', // Menampilkan nilai label
                 fontColor: 'black', // Warna teks label
-                fontSize: 12,
+                fontSize: 10,
                 position: 'end', // Posisi label (end, start, top, bottom)
                 textMargin: 8, // Jarak antara label dan batang
             },

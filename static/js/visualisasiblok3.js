@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let myChart = new Chart(
     document.getElementById('myChart'),
-    config304x303  // Gantilah dengan konfigurasi default
+    config306x308  // Gantilah dengan konfigurasi default
   );
 
   function changeChart(selectedId) {
