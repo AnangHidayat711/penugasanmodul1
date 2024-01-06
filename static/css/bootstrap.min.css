@@ -20,6 +20,7 @@
   --bs-gray-dark: #343a40;
   --bs-primary: #5b84b1;
   --bs-secondary: #CA2128;
+  --bs-active: #FBAC1B;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -3204,14 +3205,14 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #000;
-  background-color: #fc766a;
-  border-color: #fc766a;
+  background-color: #CA2128;
+  border-color: #CA2128;
 }
 
 .btn-secondary:hover {
   color: #000;
-  background-color: #fc766a;
-  border-color: #fc766a;
+  background-color: #CA2128;
+  border-color: #CA2128;
 }
 
 .btn-check:focus + .btn-secondary,

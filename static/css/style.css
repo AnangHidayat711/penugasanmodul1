@@ -130,7 +130,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-  color: var(--bs-secondary) !important;
+  color: var(--bs-active) !important;
 }
 
 .navbar .dropdown-toggle::after {
