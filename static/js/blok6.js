@@ -83,7 +83,7 @@ const config6 = {
                 render: 'percentage',
                 precision: 2,
                 fontColor: 'black',
-                fontSize: 14,
+                    
                 align:'center',
                 position: 'center',
                 offset: 0,

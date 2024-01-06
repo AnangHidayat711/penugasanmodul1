@@ -81,13 +81,12 @@ const config7 = {
             },
             labels: {
                 render: 'percentage',
-                fontColor: 'black',
-                fontSize: 14,
                 precision: 2,
-                position: 'end',
-                arc: true,
-                outsidePadding: 4,
-                textMargin: 2,
+                fontColor: 'black',
+                    
+                align:'center',
+                position: 'center',
+                offset: 0,
             },
           
         }
