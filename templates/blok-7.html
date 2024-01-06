@@ -56,8 +56,9 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script> -->
     <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+   
 
     <style>
       .image-grid {
@@ -71,8 +72,6 @@
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
-
- 
 
       .grid-item p,
       .grid-item h3 {
@@ -122,12 +121,17 @@
         <nav class="navbar navbar-dark navbar-expand-lg py-0">
           <a href="/" class="navbar-brand">
             <div class="d-flex align-items-center">
-              <img src="../static/img/logopkl.png" style="background-color: white; border-radius: 50%;" alt="Logo" class="logo" width="45" height="45">
+              <img
+                src="../static/img/logopkl.png"
+                style="background-color: white; border-radius: 50%"
+                alt="Logo"
+                class="logo"
+                width="45"
+                height="45"
+              />
               <div>
-                <h6 class="text-white mb-0">
-                  Web Hasil Visualisasi
-                </h6>
-                <h6 class="text-white"> Pengolahan Modul 1</h6>
+                <h6 class="text-white mb-0">Web Hasil Visualisasi</h6>
+                <h6 class="text-white">Pengolahan Modul 1</h6>
               </div>
             </div>
           </a>
@@ -195,20 +199,26 @@
             <!-- </div> -->
             <div class="row g-0">
               <div class="wrap-all">
-                <h2
-                  class="display-2 text-primary mb-1 animated slideInDown"
-                  
-                >
+                <h2 class="display-2 text-primary mb-1 animated slideInDown">
                   BLOK VII
                 </h2>
                 <h3 class="text-primary">KESIAPAN LINGKUNGAN EKSTERNAL</h3>
                 <div class="wrap-dropdown-container">
                   <div class="dropdown-container-1 z-3">
-                    <h3 class="mt-5 text-primary" >
-                      Pilih Daftar Pertanyaan
-                    </h3>
+                    <h3 class="mt-5 text-primary">Pilih Daftar Pertanyaan</h3>
                     <div class="select-box-1">
                       <div class="dropdown-options-container-1">
+                        <div class="option-1">
+                          <input
+                            type="radio"
+                            class="radio"
+                            id="blok-vii"
+                            name="category"
+                          />
+                          <label for="blok-vii"
+                            >Blok VII - Ringkasan Skala Likert</label
+                          >
+                        </div>
                         <div class="option-1">
                           <input
                             type="radio"
@@ -216,7 +226,10 @@
                             id="option-701"
                             name="category"
                           />
-                          <label for="option-701">701 - Ketertarikan Pelanggan dalam Pemanfaatan TIK</label>
+                          <label for="option-701"
+                            >701 - Ketertarikan Pelanggan dalam Pemanfaatan
+                            TIK</label
+                          >
                         </div>
                         <div class="option-1">
                           <input
@@ -225,7 +238,10 @@
                             id="option-702"
                             name="category"
                           />
-                          <label for="option-702">702 - Penggunaan TIK oleh Supplier dalam Transaksi Kegiatan Usaha</label>
+                          <label for="option-702"
+                            >702 - Penggunaan TIK oleh Supplier dalam Transaksi
+                            Kegiatan Usaha</label
+                          >
                         </div>
                         <div class="option-1">
                           <input
@@ -234,7 +250,10 @@
                             id="option-703"
                             name="category"
                           />
-                          <label for="option-703">703 - Akses Jaringan Internet di Lokasi Unit Usaha</label>
+                          <label for="option-703"
+                            >703 - Akses Jaringan Internet di Lokasi Unit
+                            Usaha</label
+                          >
                         </div>
                         <div class="option-1">
                           <input
@@ -243,7 +262,10 @@
                             id="option-704"
                             name="category"
                           />
-                          <label for="option-704">704 - Pemenuhan Kebutuhan Listrik Unit Usaha oleh PLN</label>
+                          <label for="option-704"
+                            >704 - Pemenuhan Kebutuhan Listrik Unit Usaha oleh
+                            PLN</label
+                          >
                         </div>
                         <div class="option-1">
                           <input
@@ -252,7 +274,10 @@
                             id="option-705"
                             name="category"
                           />
-                          <label for="option-705">705 - Pengaruh Motivasi Keluarga dan Lingkungan Terhadap Pemanfaatan TIK</label>
+                          <label for="option-705"
+                            >705 - Pengaruh Motivasi Keluarga dan Lingkungan
+                            Terhadap Pemanfaatan TIK</label
+                          >
                         </div>
                         <div class="option-1">
                           <input
@@ -261,7 +286,10 @@
                             id="option-706"
                             name="category"
                           />
-                          <label for="option-706">706 - Tingkat Kecukupan Bantuan yang Diberikan Pemerintah</label>
+                          <label for="option-706"
+                            >706 - Tingkat Kecukupan Bantuan yang Diberikan
+                            Pemerintah</label
+                          >
                         </div>
                         <div class="option-1">
                           <input
@@ -270,10 +298,12 @@
                             id="option-707"
                             name="category"
                           />
-                          <label for="option-707">707 - Tingkat Kemudahan Peminjaman/Kredit dari Perbankan</label>
+                          <label for="option-707"
+                            >707 - Tingkat Kemudahan Peminjaman/Kredit dari
+                            Perbankan</label
+                          >
                         </div>
                       </div>
-                      
 
                       <div class="selected-1">Pilih Pertanyaan</div>
                     </div>
@@ -293,7 +323,7 @@
     </div>
 
     <!-- Footer Start -->
-    
+
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -324,6 +354,7 @@
     </script> -->
 
     <!-- JavaScript Libraries -->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>

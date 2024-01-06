@@ -18,12 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let myChart = new Chart(
     document.getElementById('myChart'),
-    config601
+    config6
   );
 
   function changeChart(selectedId) {
     let config;
     switch (selectedId) {
+      case "blok-vi":
+        config = config6;
+        break;
       case "option-601":
         config = config601;
         break;

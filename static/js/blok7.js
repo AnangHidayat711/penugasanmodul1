@@ -1,3 +1,98 @@
+const config7 = {
+    type: 'bar',
+    data: {
+        labels: ['701', '702','703','704','705','706','707'],
+        datasets: [
+            {
+            label: 'Sangat Kurang',
+            data: [1021,941,925,926,960,926,947],
+            backgroundColor: ["#F58020"],
+      
+            },
+            {
+                label: 'Kurang',
+                data: [898,936,899,917,948,887,921],
+                backgroundColor: ["#FBAC1B"],
+            
+                }, 
+                {
+                    label: 'Baik',
+                    data: [914,960,957,913,921,975,930],
+                    backgroundColor: ["#FFC837"],
+           
+                    }, 
+                    {
+                        label: 'Sangat Baik',
+                        data: [870,866,922,947,874,915,905],
+                        backgroundColor: ["#FBE47E"],
+                    
+                        }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        tooltips: {
+            displayColors: true,
+            callbacks:{
+              mode: 'x',
+            },
+          },
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                },
+                stacked: true
+            },
+            y: {
+                display:false,
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                },
+                type: 'linear',
+                stacked: true
+            }
+        },
+        plugins: {
+            legend: {
+                position:"bottom"
+            },
+            title: {
+                display: true,
+                text: 'Ringkasan Skala Likert Blok VII',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'percentage',
+                fontColor: 'black',
+                fontSize: 14,
+                precision: 2,
+                position: 'end',
+                arc: true,
+                outsidePadding: 4,
+                textMargin: 2,
+            },
+          
+        }
+    }
+};
 const config701 = {
     type: 'pie',
     data: {

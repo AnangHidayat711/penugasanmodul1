@@ -1,3 +1,353 @@
+const config308x421 = {
+    type: 'bar',
+    data: {
+        labels: ['Kecil', 'Mikro'],
+        datasets: [
+            {
+            label: 'Sudah Memanfaatkan TIK',
+            data: [1399,410],
+            backgroundColor: ["#F58020"],
+            borderWidth: 1
+            },
+            {
+                label: 'Tidak Memanfaatkan TIK',
+                data: [1484,410],
+                backgroundColor: ["#FFC837"],
+                borderWidth: 1
+                }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position:"top"
+            },
+            title: {
+                display: true,
+                text: 'Jumlah Pemilik Usaha Berdasarkan Skala Usaha dan Pemanfaatan TIK',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'value', // Menampilkan nilai label
+                fontColor: 'black', // Warna teks label
+                fontSize: 12,
+                position: 'end', // Posisi label (end, start, top, bottom)
+                textMargin: 8, // Jarak antara label dan batang
+            },
+        }
+    }
+};
+
+const config308x401b = {
+    type: 'bar',
+    data: {
+        labels: ['PC', 'Laptop','Tablet','Smartphone'],
+        datasets: [
+            {
+            label: 'Kecil',
+            data: [842,836,828,817],
+            backgroundColor: ["#F58020"],
+            borderWidth: 1
+            },
+            {
+                label: 'Mikro',
+                data: [256,263,255,253],
+                backgroundColor: ["#FFC837"],
+                borderWidth: 1
+                }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position:"top"
+            },
+            title: {
+                display: true,
+                text: 'Jumlah Pemilik Usaha Berdasarkan Skala Usaha dan Perangkat Digital',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'value', // Menampilkan nilai label
+                fontColor: 'black', // Warna teks label
+                fontSize: 12,
+                position: 'end', // Posisi label (end, start, top, bottom)
+                textMargin: 8, // Jarak antara label dan batang
+            },
+        }
+    }
+};
+
+const config308x403b = {
+    type: 'bar',
+    data: {
+        labels: ['Email', 'WhatsApp','Line','Telegram','Instagram','Twitter','Lainnya'],
+        datasets: [
+            {
+            label: 'Kecil',
+            data: [845,842,866,840,858,817,839],
+            backgroundColor: ["#F58020"],
+            borderWidth: 1
+            },
+            {
+                label: 'Mikro',
+                data: [235,243,228,240,242,237,235],
+                backgroundColor: ["#FFC837"],
+                borderWidth: 1
+                }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position:"top"
+            },
+            title: {
+                display: true,
+                text: 'Jumlah Pemilik Usaha Berdasarkan Skala Usaha dan Sosial Media',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'value', // Menampilkan nilai label
+                fontColor: 'black', // Warna teks label
+                fontSize: 12,
+                position: 'end', // Posisi label (end, start, top, bottom)
+                textMargin: 8, // Jarak antara label dan batang
+            },
+        }
+    }
+};
+
+const config308x405b = {
+    type: 'bar',
+    data: {
+        labels: ['Media Sosial','Marketplace','Keduanya'],
+        datasets: [
+            {
+            label: 'Kecil',
+            data: [740,721,682],
+            backgroundColor: ["#F58020"],
+            borderWidth: 1
+            },
+            {
+                label: 'Mikro',
+                data: [210,202,207],
+                backgroundColor: ["#FFC837"],
+                borderWidth: 1
+                }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position:"top"
+            },
+            title: {
+                display: true,
+                text: 'Jumlah Unit Usaha Berdasarkan Jenis Sarana Promosi dan Skala Usaha',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'value', // Menampilkan nilai label
+                fontColor: 'black', // Warna teks label
+                fontSize: 12,
+                position: 'end', // Posisi label (end, start, top, bottom)
+                textMargin: 8, // Jarak antara label dan batang
+            },
+        }
+    }
+};
+
+const config308x407b = {
+    type: 'bar',
+    data: {
+        labels: ['Media Sosial','Marketplace'],
+        datasets: [
+            {
+            label: 'Kecil',
+            data: [940,1000],
+            backgroundColor: ["#F58020"],
+            borderWidth: 1
+            },
+            {
+                label: 'Mikro',
+                data: [285,240],
+                backgroundColor: ["#FFC837"],
+                borderWidth: 1
+                }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                }
+            },
+            y: {
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                position:"top"
+            },
+            title: {
+                display: true,
+                text: 'Jumlah Unit Usaha Berdasarkan Jenis Sarana Penjualan dan Skala Usaha',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'value', // Menampilkan nilai label
+                fontColor: 'black', // Warna teks label
+                fontSize: 12,
+                position: 'end', // Posisi label (end, start, top, bottom)
+                textMargin: 8, // Jarak antara label dan batang
+            },
+        }
+    }
+};
+
 const config401a = {
     type: 'pie',
     data: {

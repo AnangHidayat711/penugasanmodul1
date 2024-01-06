@@ -18,12 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let myChart = new Chart(
     document.getElementById('myChart'),
-    config501
+    config5
   );
 
   function changeChart(selectedId) {
     let config;
     switch (selectedId) {
+      case "blok-v":
+        config = config5;
+        break;
       case "ikut-serta":
         config = config501;
         break;

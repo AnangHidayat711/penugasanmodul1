@@ -1,3 +1,97 @@
+const config6 = {
+    type: 'bar',
+    data: {
+        labels: ['601', '602','603','604','605','606','607','608','609'],
+        datasets: [
+            {
+            label: 'Sangat Kurang',
+            data: [908,891,908,898,918,1003,960,891,921],
+            backgroundColor: ["#F58020"],
+      
+            },
+            {
+                label: 'Kurang',
+                data: [959,927,905,973,905,874,914,949,894],
+                backgroundColor: ["#FBAC1B"],
+            
+                }, 
+                {
+                    label: 'Baik',
+                    data: [936,905,978,899,936,960,893,925,956],
+                    backgroundColor: ["#FFC837"],
+           
+                    }, 
+                    {
+                        label: 'Sangat Baik',
+                        data: [900,980,912,933,944,866,936,938,932],
+                        backgroundColor: ["#FBE47E"],
+                    
+                        }, 
+    ]
+    },
+    options: {
+        indexAxis:'x',
+        maintainAspectRatio: false,
+        tooltips: {
+            displayColors: true,
+            callbacks:{
+              mode: 'x',
+            },
+          },
+        scales: {
+            x: {
+                // title: {
+                //     display: true,
+                //     text: 'Rata-Rata Jumlah Kata per Review'
+                // },
+                grid : {
+                    display : false
+                },
+                stacked: true
+            },
+            y: {
+                display:false,
+                beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah'
+                },
+                grid : {
+                    display : false
+                },
+                type: 'linear',
+                stacked: true
+            }
+        },
+        plugins: {
+            legend: {
+                position:"bottom"
+            },
+            title: {
+                display: true,
+                text: 'Ringkasan Skala Likert Blok VI',
+                padding: {
+                    top: 10,
+                    bottom: 30
+                },
+                font: {
+                    size: 20,
+                    family : 'Helvetica'
+                }
+            },
+            labels: {
+                render: 'percentage',
+                precision: 2,
+                fontColor: 'black',
+                fontSize: 14,
+                align:'center',
+                position: 'center',
+                offset: 0,
+            },
+          
+        }
+    }
+};
 const config601 = {
     type: 'pie',
     data: {

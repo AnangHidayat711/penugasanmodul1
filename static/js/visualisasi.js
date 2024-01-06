@@ -18,12 +18,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let myChart = new Chart(
     document.getElementById('myChart'),
-    config401a
+    config308x401b
   );
 
   function changeChart(selectedId) {
     let config;
     switch (selectedId) {
+      case "option-308-401b":
+        config = config308x401b
+        break;
+      case "option-308-403b":
+        config = config308x403b
+        break;
+      case "option-308-405b":
+        config = config308x405b
+        break;
+      case "option-308-407b":
+        config = config308x407b
+        break;
+      case "option-308-421":
+        config = config308x421
+        break;
       case "option-401a":
         config = config401a;
         break;

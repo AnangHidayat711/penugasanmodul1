@@ -18,12 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let myChart = new Chart(
     document.getElementById('myChart'),
-    config701 // Gunakan config701 karena kita menggunakan ID "option-701" sebagai default
+    config7 // Gunakan config701 karena kita menggunakan ID "option-701" sebagai default
   );
 
   function changeChart(selectedId) {
     let config;
     switch (selectedId) {
+      case "blok-vii":
+        config = config7;
+        break;
       case "option-701":
         config = config701;
         break;
