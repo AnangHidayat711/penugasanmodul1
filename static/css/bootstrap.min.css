@@ -3203,7 +3203,7 @@ fieldset:disabled .btn {
   border-color: #5b84b1;
 }
 
-.btn-secondary {
+.btn-secondary {  --bs-secondary: #CA2128;
   color: #000;
   background-color: #CA2128;
   border-color: #CA2128;
@@ -3220,7 +3220,7 @@ fieldset:disabled .btn {
   color: #000;
   background-color: #fc766a;
   border-color: #fc766a;
-  box-shadow: 0 0 0 0.25rem rgba(32, 180, 119, 0.5);
+  box-shadow: 0 0 0 0.25rem #FBAC1B;
 }
 
 .btn-check:checked + .btn-secondary,
@@ -4803,7 +4803,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0.1);
 }
 
