@@ -83,7 +83,7 @@ const config5 = {
                 render: 'percentage',
                 precision: 2,
                 fontColor: 'black',
-                fontSize: 9.5,
+                fontSize: 8.5,
                 align:'center',
                 position: 'center',
                 offset: 0,
