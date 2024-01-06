@@ -9,6 +9,10 @@ app = Flask(__name__)
 
 # Beranda
 @app.route('/', methods=['GET'])
+def hasil():
+    return render_template('beranda.html') 
+
+@app.route('/blok-iii', methods=['GET'])
 def index():
     return render_template('blok-3.html') 
 
