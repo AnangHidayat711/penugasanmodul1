@@ -58,6 +58,10 @@
       href="{{ url_for('static', filename='css/index.css') }}"
       rel="stylesheet"
     />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
   </head>
 
   <body style="background-color: #ffedca">
@@ -265,10 +269,10 @@
             <!-- About Sentimen End -->
 
             <!-- Aspek Start -->
-            <div class="container-fluid services py-5 mb-5">
+            <div class="container-fluid services py-5 mb-2">
               <div class="container">
                 <div
-                  class="text-center mx-auto pb-5 wow fadeIn"
+                  class="text-center mx-auto pb-5 mb-0 wow fadeIn"
                   data-wow-delay=".3s"
                   style="max-width: 600px"
                 >
@@ -343,6 +347,251 @@
                 </div>
               </div>
             </div>
+            <div class="container-fluid services py-5 mb-5">
+              <div class="container">
+                <div
+                  class="text-center mx-auto pb-0 wow fadeIn"
+                  data-wow-delay=".3s"
+                  style="max-width: 600px"
+                >
+                  <h5 class="text-primary">Tujuan Pertama</h5>
+                  <h1 class="text-primary">Karakteristik Unit Usaha</h1>
+                </div>
+                <div class="container-fluid py-2 my-2 mt-0">
+                  <div class="container pt-5">
+                    <div class="row g-5">
+                      <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                      >
+                        <h3 class="text-primary pb-2">
+                          1. Proporsi Jenis Kelamin dan Usia Pemilik Usaha
+                        </h3>
+                        <!-- <h1 class="mb-4 text-primary">Penelitian Modul 1</h1> -->
+                        <p
+                          class="text-justify pt-3"
+                          style="text-align: justify"
+                        >
+                          Grafik menunjukkan bahwa pemilik atau pengelola unit
+                          usaha pariwisata di Kota Batu didominasi oleh mereka
+                          yang berada pada usia di atas 60 tahun, yaitu sebesar
+                          21.83% dari total pemilik atau pengelola unit usaha
+                          pariwisata di Kota Batu, dimana perempuan mendominasi
+                          dengan persentase sebesar 11.07% dan laki-laki sebesar
+                          10.76%. Setelah itu disusul oleh pemilik atau pengelola
+                          pada interval usia 20 - 24 tahun sebesar 10.5%, dan
+                          selanjutnya interval usia 35 - 39 tahun sebesar
+                          10.4%. Jika dilihat berdasarkan jenis kelamin,
+                          terlihat bahwa jenis kelamin pemilik atau pengelola
+                          unit usaha pariwisata di Kota Batu hampir seimbang
+                          antara laki-laki dan perempuan.
+                        </p>
+                      </div>
+                      <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                      >
+                        <div class="h-100 position-relative">
+                          <div class="chart-hasil">
+                            <canvas id="myChart"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid py-2 my-2 mt-0">
+                  <div class="container pt-5">
+                    <div class="row g-5">
+                      <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                      >
+                        <div class="h-100 position-relative">
+                          <div class="chart-hasil">
+                            <canvas id="myChart-pendidikan"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                      >
+                        <h3 class="text-primary pb-2">
+                          2. Jumlah Pemilik Usaha Berdasarkan Jenis Kelamin dan
+                          Tingkat Pendidikan
+                        </h3>
+                        <!-- <h1 class="mb-4 text-primary">Penelitian Modul 1</h1> -->
+                        <p
+                          class="text-justify pt-3"
+                          style="text-align: justify"
+                        >
+                          Grafik menunjukkan bahwa pemilik atau pengelola unit
+                          usaha pariwisata di Kota Batu didominasi oleh mereka
+                          yang memiliki pendidikan terakhir yaitu D1/D2/D3
+                          sebanyak 548 diantaranya 296 laki-laki dan 252 perempuan.
+                          Setelah itu disusul oleh pemilik atau pengelola usaha dengan
+                          tingkat pendidikan SMA/SMK/Sederajat sebanyak 545 diantaranya 
+                          286 laki-laki dan 259 perempuan. Jika dilihat berdasarkan tingkat 
+                          pendidikan terlihat bahwa persebaran tingkat pendidikannya 
+                          cukup merata dari berbagai jenjang.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container-fluid py-2 my-2 mt-0">
+                  <div class="container pt-5">
+                    <div class="row g-5">
+                      <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                      >
+                        <h3 class="text-primary pb-2">
+                          3. Proporsi Skala Unit Usaha
+                        </h3>
+                        <!-- <h1 class="mb-4 text-primary">Penelitian Modul 1</h1> -->
+                        <p
+                          class="text-justify pt-3"
+                          style="text-align: justify"
+                        >
+                        Berdasarkan total sampel yang terpilih sebanyak 3703 unit usaha 
+                        pariwisata, terdapat 2883 unit usaha atau sebesar 77.86% dari total 
+                        sampel unit usaha pariwisata berskala Kecil, artinya 2883 unit usaha 
+                        pariwisata yang terpilih sebagai sampel memiliki jumlah tenaga kerja
+                        5 - 19 pekerja. Selain itu, terdapat 820 unit usaha pariwisata atau sebesar 
+                        22.14% yang unit usaha pariwisata berskala mikro, artinya 820 unit usaha 
+                        pariwisata yang terpilih sebagai sampel memiliki jumlah tenaga kerja
+                        1 - 14 pekerja. Dari hasil tersebut, 
+                        dapat dianalisis bahwa terjadi ketimpangan pada kedua skala unit usaha 
+                        pariwisata tersebut. 
+                        
+                        </p>
+                      </div>
+                      <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                      >
+                        <div class="h-100 position-relative">
+                          <div class="chart-hasil">
+                            <canvas id="myChart-skala"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+              <a style="margin-left: 18%;"
+              href="/blok-iii"
+              class="btn btn-secondary text-white px-5 py-3 rounded-pill ml-4"
+              >Selengkapnya</a
+            >
+              <div class="container mt-5">
+                <div
+                  class="text-center mx-auto pb-0 wow fadeIn"
+                  data-wow-delay=".3s"
+                  style="max-width: 600px"
+                >
+                  <h5 class="text-primary">Tujuan Kedua</h5>
+                  <h1 class="text-primary">Tingkat Kesiapan Unit Usaha</h1>
+                </div>
+                <div class="container-fluid py-2 my-2 mt-0">
+                  <div class="container pt-5">
+                    <div class="row g-5">
+                      <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                      >
+                        <div class="h-100 position-relative">
+                          <div class="chart-hasil">
+                            <canvas id="myChart-kesiapan"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                      >
+                        <h3 class="text-primary pb-2">
+                          Tingkat Kesiapan Unit Usaha Pariwisata dalam
+                          Pemanfaatan TIK
+                        </h3>
+                        <!-- <h1 class="mb-4 text-primary">Penelitian Modul 1</h1> -->
+                        <p
+                          class="text-justify pt-3"
+                          style="text-align: justify"
+                        >
+                        Secara umum, 25.35% unit usaha pariwisata di Kota Batu 
+                        sangat tidak siap untuk memanfaatkan TIK dalam kegiatan 
+                        usahanya. Sebanyak 24.92% dikategorikan tidak siap dalam 
+                        pemanfaatan TIK. Sebanyak 25.04% unit usaha pariwisata 
+                        tergolong siap untuk memanfaatkan TIK, dan sekitar 24.69% 
+                        unit usaha dikategorikan sangat siap untuk memanfaatkan 
+                        teknologi informasi dan komunikasi dalam kegiatan usahanya.
+                        Meskipun tidak terjadi perbedaan cukup signifikan terkait
+                        kategori kesiapannya, perlu menjadi perhatian bahwa persentase
+                        sangat tidak siap memiliki persentase tertinggi yaitu 26.14%
+                        sehingga perlu menjadi evaluasi bagi pemangku kepentingan terkait
+                        untuk menunjang kesiapan pemanfaatan TIK dalam Unit Usaha Pariwisata.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container mt-5">
+                <div
+                  class="text-center mx-auto pb-0 wow fadeIn"
+                  data-wow-delay=".3s"
+                  style="max-width: 600px"
+                >
+                  <h5 class="text-primary">Tujuan Ketiga</h5>
+                  <h1 class="text-primary">Faktor Pemanfaatan TIK</h1>
+                </div>
+                <div class="container-fluid py-2 my-2 mt-0">
+                  <div class="container pt-5">
+                    <div class="row g-5">
+                      <div
+                        class="col-lg-7 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".5s"
+                      >
+                        <h3 class="text-primary pb-2">
+                          Jumlah Pemilik Unit Usaha Berdasarkan Pemanfaatan TIK
+                          dan Skala Usaha
+                        </h3>
+                        <!-- <h1 class="mb-4 text-primary">Penelitian Modul 1</h1> -->
+                        <p
+                          class="text-justify pt-3"
+                          style="text-align: justify"
+                        >
+                          Hasil pengolahan data menunjukkan bahwa faktor yang paling berpengaruh
+                          dalam pemanfaatan TIK pada Unit Usaha Pariwista adalah <strong>Skala Usaha</strong>
+                          unit usaha tersebut. Dari grafik terlihat bahwa skala usaha kecil memiliki
+                          jumlah yang sudah memanfaatkan TIK lebih tinggi dari pada usaha skala mikro yaitu 
+                          1399 berbanding 410 unit usaha. Meskipun demikian, tetap menjadi perhatian bahwa
+                          jumlah unit usaha yang tidak memanfaatkan TIK masih tinggi bahkan pada skala usaha
+                          kecil lebih tinggi yang tidak memanfaatkan TIK. Hal ini menjadi perhatian dalam evaluasi
+                          unit usaha untuk menyiapkan dari berbagai aspek dalam menyiapkan pemanfaatan TIK pada unit usaha khususnya di sektor pariwisata.
+                        </p>
+                      </div>
+                      <div
+                        class="col-lg-5 col-md-6 col-sm-12 wow fadeIn"
+                        data-wow-delay=".3s"
+                      >
+                        <div class="h-100 position-relative">
+                          <div class="chart-hasil">
+                            <canvas id="myChart-faktor"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!-- Aspek End -->
 
             <!-- Tim Start -->
@@ -354,7 +603,9 @@
                   style="max-width: 600px"
                 >
                   <h5 class="text-primary">Visualisasi Data</h5>
-                  <h1 class="text-primary">Visualisasi Hasil Setiap Blok Pertanyaan</h1>
+                  <h1 class="text-primary">
+                    Visualisasi Hasil Setiap Blok Pertanyaan
+                  </h1>
                 </div>
                 <div class="row g-5 services-inner">
                   <div
@@ -364,7 +615,9 @@
                     <div class="services-item bg-light">
                       <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                          <i class="fa fa-user-edit fa-7x mb-4 text-primary"></i>
+                          <i
+                            class="fa fa-user-edit fa-7x mb-4 text-primary"
+                          ></i>
                           <h4 class="mb-3">BLOK III</h4>
                           <p class="mb-4">
                             Blok III mencakup terkait keterangan umum dari
@@ -389,9 +642,7 @@
                     <div class="services-item bg-light">
                       <div class="p-4 text-center services-content">
                         <div class="services-content-icon">
-                          <i
-                            class="fa fa-laptop fa-7x mb-4 text-primary"
-                          ></i>
+                          <i class="fa fa-laptop fa-7x mb-4 text-primary"></i>
                           <h4 class="mb-3">BLOK IV</h4>
                           <p class="mb-4">
                             Blok IV bertujuan untuk memperoleh informasi
@@ -515,6 +766,8 @@
     <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
     <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
+    <script src="{{ url_for('static', filename='js/karakteristik.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/hasil.js') }}"></script>
     <!-- Template Javascript -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
   </body>
